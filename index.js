@@ -1,16 +1,3 @@
-//Instruções para entrega
-//# 1️⃣ Desafio Classificador de nível de Herói
-
-//**O Que deve ser utilizado**
-
-//- Variáveis
-//- Operadores
-//- Laços de repetição
-//- Estruturas de decisões
-
-//## Objetivo
-//Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
-
 let nome = "Arquenic";
 let xp = 3000;
 let nivel ="";
@@ -25,7 +12,6 @@ let nivel ="";
             nivel="Ouro";    
     }else if (xp > 7000 && xp <=8000){
             nivel="Platina"
-
     }else if (xp > 8000 && xp<= 10000){
             nivel="Imortal";
     }else {
@@ -34,8 +20,15 @@ let nivel ="";
 
     console.log("O Herói de nome "+nome+" está no nível de "+nivel);   
 
-
-
+//Instruções para entrega
+//# 1️⃣ Desafio Classificador de nível de Herói
+//**O Que deve ser utilizado**
+//- Variáveis
+//- Operadores
+//- Laços de repetição
+//- Estruturas de decisões
+//## Objetivo
+//Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
 /*Se XP for menor do que 1.000 = Ferro
 Se XP for entre 1.001 e 2.000 = Bronze
 Se XP for entre 2.001 e 5.000 = Prata
