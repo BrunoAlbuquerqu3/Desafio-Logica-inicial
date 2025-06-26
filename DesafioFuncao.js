@@ -31,9 +31,10 @@ Ao final deve se exibir uma mensagem:
 let win = 0;
 let defeat = 0;
 
-calcularPartidas(50,20);
+let saidasVitorias = win - defeat;
+let level= ""; //level variable
 
-function calcularPartidas(win, defeat) {
+function calculateMatches(win, defeat) {
     //Calculo do saldo
     let saidasVitorias = win - defeat;
     //Condicionais
@@ -57,5 +58,13 @@ function calcularPartidas(win, defeat) {
           level = level
 
 }   
-//Exibição da mensagem
+
+// Player Values 
+let winPlayer = 50;
+let defeaPlayer = 20;
+
+let calculateMatches= calculeteRankings(winPlayer,defeaPlayer);
+
+
+// Message Display
 console.log(" Herói tem de saldo de " + saidasVitorias + " está no nível de " + level);
