@@ -26,44 +26,41 @@ Se vitórias for maior ou igual a 101 = Imortal
 Ao final deve se exibir uma mensagem:
 "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**"
  */
+function calculeteRankings(wins, defeats) {
 
-//Variables
-let win = 0;
-let defeat = 0;
+    //Variables 
+  let balance =wins-defeats;
+  let level ="";
 
-let saidasVitorias = win - defeat;
-let level= ""; //level variable
-
-function calculateMatches(win, defeat) {
-    //Calculo do saldo
-    let saidasVitorias = win - defeat;
     //Condicionais
-    if (win <= 10){
+    if (wins <= 10){
         level = "Ferro";
-    } else if (win > 10){
+    } else if (wins >=11 && win <=20){
          level = "Bronze";
-        }else if (win > 20){
+        }else if (wins > 20 && win <=50){
             level = "Prata";
-        }else if (win > 50){
+        }else if (wins >= 51 && win <= 80){
             level = "Ouro";
-         }else if (win > 80){
+         }else if (wins >= 81 && win <=90){
             level = "Diamante";
-          }else if(win > 90 && win <= 100) {
+          }else if(wins >= 91 && win <= 100) {
             level = "Lendário";
           }else{
             level = "Imortal";
           }
 
-          return saidasVitorias,
-          level = level
+          return{ 
+            winsBalance : balance,
+            playerLevel : level
+        };
 
 }   
 
 // Player Values 
-let winPlayer = 50;
-let defeaPlayer = 20;
+let playerWins = 105;
+let playerDefeats = 10;
 
-let calculateMatches= calculeteRankings(winPlayer,defeaPlayer);
+let rankingResult = calculeteRankings(playerWins,playerDefeats);
 
 
 // Message Display
