@@ -35,15 +35,15 @@ function calculeteRankings(wins, defeats) {
     //Condicionais
     if (wins <= 10){
         level = "Ferro";
-    } else if (wins >=11 && win <=20){
+    } else if (wins >=11 && wins <=20){
          level = "Bronze";
-        }else if (wins > 20 && win <=50){
+        }else if (wins > 20 && wins <=50){
             level = "Prata";
-        }else if (wins >= 51 && win <= 80){
+        }else if (wins >= 51 && wins <= 80){
             level = "Ouro";
-         }else if (wins >= 81 && win <=90){
+         }else if (wins >= 81 && wins <=90){
             level = "Diamante";
-          }else if(wins >= 91 && win <= 100) {
+          }else if(wins >= 91 && wins <= 100) {
             level = "Lendário";
           }else{
             level = "Imortal";
@@ -64,4 +64,4 @@ let rankingResult = calculeteRankings(playerWins,playerDefeats);
 
 
 // Message Display
-console.log(" Herói tem de saldo de " + saidasVitorias + " está no nível de " + level);
+console.log(" Herói tem de saldo de " + rankingResult.winsBalance + " está no nível de " + rankingResult.playerLevel);
