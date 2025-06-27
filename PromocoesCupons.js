@@ -1,3 +1,29 @@
+
+// TODO: Crie uma função chamada calcularDesconto():
+    function calcularDesconto(valorCompra,cupom=""){
+        let totalCompra = 0;
+        let desconto = 0;
+          if (cupom === ""){
+            totalCompra = valorCompra;
+          }
+            else if (cupom === "DESCONTO10"){
+            desconto = valorCompra*0.10;
+            totalCompra = valorCompra - desconto;
+             }else if (cupom === "DESCONTO20"){
+               desconto = valorCompra*0.20;
+               totalCompra = valorCompra - desconto;
+              }
+                return totalCompra;     
+      }
+    // Lê o valor total da compra e o código do cupom
+      let valorCompra = 100;
+      let cupom = "DESCONTO20";
+
+    // TODO: Calcule o valor final com base no cupom:
+     let ValorCobrado = calcularDesconto(valorCompra,cupom);
+
+    // TODO: Imprima o valor final com o desconto, formatado para R$:
+    console.log("Valor final da compra: R$ " + ValorCobrado.toFixed(2));
 /*Descrição
 Em algumas promoções de e-commerce, os clientes têm a opção de aplicar cupons de desconto. 
 A missão é criar uma função que calcule o valor final da compra após aplicar um desconto, caso o cupom seja válido.
@@ -30,29 +56,3 @@ com lógica de programação. Caso não tenha experiência em programação, uti
 aprendidos. Para resetar o template, basta clicar em “Restart Code.”
 */
 
-
-// TODO: Crie uma função chamada calcularDesconto():
-    function calcularDesconto(valorCompra,cupom=""){
-        let totalCompra = 0;
-        let desconto = 0;
-          if (cupom === ""){
-            totalCompra = valorCompra;
-          }
-            else if (cupom === "DESCONTO10"){
-            desconto = valorCompra*0.10;
-            totalCompra = valorCompra - desconto;
-             }else if (cupom === "DESCONTO20"){
-               desconto = valorCompra*0.20;
-               totalCompra = valorCompra - desconto;
-              }
-                return totalCompra;     
-      }
-    // Lê o valor total da compra e o código do cupom
-      let valorCompra = 100;
-      let cupom = "DESCONTO20";
-
-    // TODO: Calcule o valor final com base no cupom:
-     let ValorCobrado = calcularDesconto(valorCompra,cupom);
-
-    // TODO: Imprima o valor final com o desconto, formatado para R$:
-    console.log("Valor final da compra: R$ " + ValorCobrado.toFixed(2));
