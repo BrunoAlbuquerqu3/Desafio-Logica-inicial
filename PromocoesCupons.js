@@ -56,9 +56,3 @@ aprendidos. Para resetar o template, basta clicar em “Restart Code.”
 
     // TODO: Imprima o valor final com o desconto, formatado para R$:
     console.log("Valor final da compra: R$ " + ValorCobrado.toFixed(2));
-   
-    
-
-
-
-
